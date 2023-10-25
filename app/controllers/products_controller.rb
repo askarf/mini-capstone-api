@@ -11,10 +11,10 @@ class ProductsController < ApplicationController
 
   def create
     @product = Product.new(
-      name: "Marc Jacobs Watch",
-      price: 75,
-      image_url: "www.tbd.com",
-      description: "slightly worn silver Marc by Marc jacobs watch.",
+      name: params[:name],
+      price: params[:price],
+      image_url: params[:image_url],
+      description: params[:description],
     )
     @product.save
     render :show
