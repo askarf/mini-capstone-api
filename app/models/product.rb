@@ -6,4 +6,9 @@ class Product < ApplicationRecord
       false
     end
   end
+
+  def tax
+    tax = (price * 0.09)
+    tax
+  end
 end
