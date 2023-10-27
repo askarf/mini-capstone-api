@@ -15,6 +15,7 @@ class ProductsController < ApplicationController
       price: params[:price],
       image_url: params[:image_url],
       description: params[:description],
+      stock: params[:stock],
     )
     @product.save
     render :show
@@ -25,6 +26,7 @@ class ProductsController < ApplicationController
     @product.update(
       name: params["name"] || @product.name, price: params["price"] || @product.price,
       image_url: params["image_url"] || @product.image_url,
+      stock: params["stock"] || @product.stock,
       description: params["description"] || @product.description,
     )
     render :show
