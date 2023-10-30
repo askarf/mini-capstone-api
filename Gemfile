@@ -46,6 +46,9 @@ gem "bootsnap", require: false
 # gem "sassc-rails"
 gem "rack-cors"
 
+#seed dump to pull data from database and populate the seeds file
+gem "seed_dump"
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 

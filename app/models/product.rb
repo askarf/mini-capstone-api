@@ -16,4 +16,12 @@ class Product < ApplicationRecord
     total = price + tax
     total
   end
+
+  # validates :name, presence: true
+  # validates :name, uniqueness: true
+  # validates :name, length: { in: 2..20 }
+  # validates :price, presence: true
+  # validates :price, numericality: { greater_than: 0 }
+  # validates :description, presence: true
+  # validates :description, length: { in: 10..500 }
 end
