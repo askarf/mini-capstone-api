@@ -18,7 +18,11 @@ class ProductsController < ApplicationController
       stock: params[:stock],
     )
     @product.save
-    render :show
+    if @product.valid?
+      render :show
+    else
+      render json: { errors: @product.errors.full_messages }, status: :unprocessable_entity
+    end
   end
 
   def update
