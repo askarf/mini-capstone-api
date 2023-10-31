@@ -22,7 +22,7 @@ class Product < ApplicationRecord
     supplier
   end
 
-  # validates :name, presence: true
+  # validates :name, presence: truesup
   # validates :name, uniqueness: true
   # validates :name, length: { in: 2..20 }
   # validates :price, presence: true

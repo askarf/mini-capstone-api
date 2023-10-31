@@ -17,6 +17,7 @@ class ProductsController < ApplicationController
       description: params[:description],
       stock: params[:stock],
       supplier_id: params[:supplier_id],
+
     )
     @product.save
     if @product.valid?
@@ -34,6 +35,7 @@ class ProductsController < ApplicationController
       stock: params["stock"] || @product.stock,
       description: params["description"] || @product.description,
       supplier_id: params["supplier_id"] || @product.supplier_id,
+
     )
     render :show
   end
