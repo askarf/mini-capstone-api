@@ -17,6 +17,11 @@ class Product < ApplicationRecord
     total
   end
 
+  def supplier
+    supplier = Supplier.find_by(id: supplier_id)
+    supplier
+  end
+
   # validates :name, presence: true
   # validates :name, uniqueness: true
   # validates :name, length: { in: 2..20 }
