@@ -22,6 +22,10 @@ class Product < ApplicationRecord
     supplier
   end
 
+  def images
+    Image.where(product_id: id)
+  end
+
   # validates :name, presence: truesup
   # validates :name, uniqueness: true
   # validates :name, length: { in: 2..20 }
