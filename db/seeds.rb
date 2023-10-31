@@ -7,3 +7,7 @@
 #   { name: "Sam Edelman Black Leather Hazel Pump", price: "80.0", image_url: "https://www.samedelman.com/blob/product-images/99900/ec/02/20419/ec0220419_pair_feed1000.jpg", description: "Slightly used, size 8 black pattened leather heels. 3.5 inch", stock: nil },
 #   { name: "White Floral Exquisite Gown", price: "900.0", image_url: "https://instagowns.com/wp-content/uploads/2022/06/IMG_2237-scaled-1.jpg", description: "Slightly used, size 4 great condition gown, long sleeve. White with embroidered colorful flowers.", stock: 1 },
 # ])
+# supplier = Supplier.new(name: "Ayalas Closet", email: "ayalascloset@example.com", phone_number: "332-332-5455")
+# supplier.save
+# supplier = Supplier.new(name: "Mimi's leftovers", email: "hamydowns@example.com", phone_number: "112-321-5455")
+# supplier.save
